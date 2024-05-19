@@ -48,6 +48,7 @@ function MovieDetailPage() {
             <div key={actor.id} className="cast-item">
               <img src={actor.profile_path} alt={actor.name} className="actor-image" />
               <p>{actor.name}</p>
+              <p>character: {actor.character}</p>
             </div>
           ))}
         </div>

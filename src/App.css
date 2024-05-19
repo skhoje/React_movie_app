@@ -25,6 +25,7 @@
 .navbar ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar ul li a:hover {
@@ -119,6 +120,7 @@
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  text-align: center;
 }
 
 .actor-image {
@@ -129,9 +131,22 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.actor-name {
+.actor-name,
+.actor-character {
   font-size: 14px;
-  text-align: center;
+  margin: 0;
+  padding: 2px 0;
+}
+
+.actor-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+  /* Adjusted to reduce spacing */
+}
+
+.actor-character {
+  color: #666;
+  font-style: italic;
 }
 
 h3 {
@@ -234,4 +249,37 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* New Pagination Styles */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #1988f0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+.pagination span {
+  font-size: 16px;
+  margin: 0 10px;
 }
